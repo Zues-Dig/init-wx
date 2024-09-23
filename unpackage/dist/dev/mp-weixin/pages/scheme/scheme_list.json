@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "计划列表",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "u-scroll-list": "/uview-ui/components/u-scroll-list/u-scroll-list",
+    "u-row": "/uview-ui/components/u-row/u-row",
+    "u-col": "/uview-ui/components/u-col/u-col",
+    "u-button": "/uview-ui/components/u-button/u-button",
+    "uni-fab": "/uni_modules/uni-fab/components/uni-fab/uni-fab",
+    "u-popup": "/uview-ui/components/u-popup/u-popup"
+  }
+}

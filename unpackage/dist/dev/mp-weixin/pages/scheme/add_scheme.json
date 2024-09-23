@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "新建计划",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "u--form": "/uview-ui/components/u--form/u--form",
+    "u-form-item": "/uview-ui/components/u-form-item/u-form-item",
+    "u--input": "/uview-ui/components/u--input/u--input",
+    "u-row": "/uview-ui/components/u-row/u-row",
+    "u-col": "/uview-ui/components/u-col/u-col",
+    "u--textarea": "/uview-ui/components/u--textarea/u--textarea",
+    "u-calendar": "/uview-ui/components/u-calendar/u-calendar"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index3",
+    "pages/index/index2",
+    "pages/scheme/add_scheme",
+    "pages/scheme/scheme_list",
+    "pages/scheme-component/transportation/index",
+    "pages/scheme-component/attractions/index",
+    "pages/scheme-component/catering/index",
+    "pages/scheme-component/hotel/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#BBBBBB",
+    "selectedColor": "#BBBBBB",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index3",
+        "iconPath": "static/images/index.png",
+        "selectedIconPath": "static/images/index-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/index/index2",
+        "iconPath": "static/images/order.png",
+        "selectedIconPath": "static/images/order-active.png",
+        "text": "订单"
+      }
+    ]
+  },
+  "usingComponents": {
+    "l-button": "/wxcomponents/button/index",
+    "l-avatar": "/wxcomponents/avatar/index",
+    "l-steps": "/wxcomponents/steps/index",
+    "l-step": "/wxcomponents/step/index"
+  }
+}

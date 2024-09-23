@@ -1,0 +1,73 @@
+
+$brand-color: #1677ff!default;
+
+/* #ifndef APP-NVUE  */
+$fab-size: var(--l-fab-size, 48px); 
+$fab-initial-gap: var(--l-fab-initial-gap, 24px);
+
+$fab-icon-size: var(--l-fab-icon-size, 28px);
+$fab-background: var( --l-fab-background, $brand-color);
+$fab-color: var(--l-fab-color, white);
+$fab-z-index: var( --l-fab-z-index, 999);
+$fab-border-radius: var( --l-fab-border-radius, 999px);
+/* #endif  */
+
+
+/* #ifdef APP-NVUE  */
+$fab-size: 48px; 
+$fab-initial-gap: 24px;
+
+$fab-icon-size: 28px;
+$fab-background: $brand-color;
+$fab-color: white;
+$fab-z-index: 999;
+$fab-border-radius:999px;
+/* #endif  */
+
+
+.l-fab {
+	/* #ifdef APP-NVUE  */
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: $fab-initial-gap;
+	bottom: $fab-initial-gap;
+	transition: transform,opacity 0.3s;
+	/* #endif  */
+	width: $fab-size;
+	height: $fab-size;
+	
+	justify-content: center;
+	align-items: center;
+	
+	background: $fab-background;
+	color: $fab-color;
+	border-radius: $fab-border-radius;
+	
+	
+	/* #ifndef APP-NVUE  */
+	display: flex;
+	user-select: none;
+	touch-action: none;
+	pointer-events: auto;
+	/* #endif  */
+	&:active,&--active {
+		opacity: 0.9;
+	}
+	&-wrapper {
+		position: fixed;
+		/* #ifndef APP-NVUE */
+		width: calc(100% - $fab-initial-gap - $fab-initial-gap);
+		height: calc(100% - $fab-initial-gap - $fab-initial-gap);
+		pointer-events: none;
+		/* #endif  */
+		
+		// left: $fab-initial-gap;
+		// bottom: $fab-initial-gap;
+		// inset: $fab-initial-gap;
+		z-index: $fab-z-index;
+	}
+	&__icon {
+		font-size: $fab-icon-size;
+	}
+}

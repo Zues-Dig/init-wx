@@ -1,0 +1,103 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+		"path": "pages/index/index3",
+		"style": {
+			"navigationBarTitleText": "首页",
+			"navigationBarBackgroundColor": "#FFFFFF",
+			"onReachBottomDistance": 50,
+			"enablePullDownRefresh": true
+			// "navigationStyle": "custom",
+			// "app-plus": {
+			// 	"scrollIndicator": "none",
+			// 	"titleNView": false //原生导航栏不显示
+			// },
+			// "navigationBarTextStyle": "white"
+		}
+	}, {
+		"path": "pages/index/index2",
+		"style": {
+			"navigationBarTitleText": "历史订单",
+			"navigationBarBackgroundColor": "#FFFFFF",
+			"onReachBottomDistance": 50,
+			"enablePullDownRefresh": true
+		}
+	}, {
+		"path": "pages/scheme/add_scheme",
+		"style": {
+			"navigationBarTitleText": "新建计划",
+			"navigationBarBackgroundColor": "#FFFFFF"
+		}
+
+	}, {
+		"path": "pages/scheme/scheme_list",
+		"style": {
+			"navigationBarTitleText": "计划列表",
+			"navigationBarBackgroundColor": "#FFFFFF"
+		}
+	}, {
+		"path": "pages/scheme-component/transportation/index",
+		"style": {
+			"navigationBarTitleText": "交通",
+			"navigationBarBackgroundColor": "#FFFFFF"
+		}
+
+	}, {
+		"path": "pages/scheme-component/attractions/index",
+		"style": {
+			"navigationBarTitleText": "景点",
+			"navigationBarBackgroundColor": "#FFFFFF"
+		}
+
+	}, {
+		"path": "pages/scheme-component/catering/index",
+		"style": {
+			"navigationBarTitleText": "饮食",
+			"navigationBarBackgroundColor": "#FFFFFF"
+		}
+
+	}, {
+		"path": "pages/scheme-component/hotel/index",
+		"style": {
+			"navigationBarTitleText": "酒店",
+			"navigationBarBackgroundColor": "#FFFFFF"
+		}
+
+	}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		},
+		"usingComponents": {
+			"l-button": "/wxcomponents/button/index",
+			"l-avatar": "/wxcomponents/avatar/index",
+			"l-steps": "/wxcomponents/steps/index",
+			"l-step": "/wxcomponents/step/index"
+		}
+	},
+
+	"tabBar": {
+		"color": "#BBBBBB",
+		"selectedColor": "#BBBBBB",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index3",
+			"iconPath": "static/images/index.png",
+			"selectedIconPath": "static/images/index-active.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/index/index2",
+			"iconPath": "static/images/order.png",
+			"selectedIconPath": "static/images/order-active.png",
+			"text": "订单"
+		}]
+	}
+}

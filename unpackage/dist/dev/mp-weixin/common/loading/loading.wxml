@@ -1,0 +1,1 @@
+<block wx:if="{{show}}"><view class="loading-container data-v-078c1fd3"><block wx:if="{{logoUrl}}"><view class="img-box square data-v-078c1fd3"><image class="img data-v-078c1fd3" src="{{logoUrl}}" mode="widthFix"></image></view></block></view></block>
